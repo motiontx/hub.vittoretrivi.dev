@@ -12,6 +12,7 @@
 }
 
 .arrow {
+  width: 1.25rem;
   height: 1.25rem;
   opacity: 0;
   transition: margin 0.2s ease-in-out, opacity 0.1s ease-in-out;
