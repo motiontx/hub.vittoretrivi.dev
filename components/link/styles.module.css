@@ -1,0 +1,49 @@
+.link {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  transition: background 0.2s ease-in-out, border 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  height: 1.25rem;
+  opacity: 0;
+  transition: margin 0.2s ease-in-out, opacity 0.1s ease-in-out;
+}
+
+.arrow svg {
+  width: 100%;
+  height: 100%;
+}
+
+.arrowLeft {
+  margin-right: 1rem;
+}
+
+.arrowRight {
+  margin-left: 1rem;
+  transform: rotate(180deg);
+}
+
+.link:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.link:hover .arrow {
+  opacity: 1;
+}
+
+.link:hover .arrow.arrowLeft {
+  margin-right: 0.5rem;
+}
+
+.link:hover .arrow.arrowRight {
+  margin-left: 0.5rem;
+}

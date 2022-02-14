@@ -1,0 +1,23 @@
+.background {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: #000428;
+  background: -webkit-linear-gradient(to right, #004e92, #000428);
+  background: linear-gradient(to right, #004e92, #000428);
+}
+
+.overlay {
+  background-image: radial-gradient(rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 1) 1px);
+  background-size: 0.25rem 0.25rem;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.6;
+}
+
+.canvas {
+  position: absolute;
+}
