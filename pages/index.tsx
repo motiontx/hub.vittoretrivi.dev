@@ -19,21 +19,17 @@ const Home: NextPage<homeProps> = ({ links }) => {
   return (
     <>
       <Head>
-        <title>👋 Vitto Retrivi</title>
+        <title>👋 Vittorio Retrivi</title>
         <meta
           name="description"
-          content="A collection of links to my websites and social media profiles"
+          content="Full Stack JavaScript Developer - Currently working with React/Next and Vue/Nuxt"
         />
         <link rel="icon" href="/favicon.png" />
       </Head>
 
       <main className={styles.main}>
         <Background />
-        <Avatar
-          src={avatar}
-          alt="Avatar of Vittorio Retrivi"
-          className={styles.avatar}
-        />
+        <Avatar src={avatar} alt="" className={styles.avatar} />
         <h1 className={styles.title}>Vittorio Retrivi</h1>
         <p className={styles.description}>Full Stack JavaScript Developer</p>
         <ul className={styles.linkList}>
