@@ -19,7 +19,7 @@ const Home: NextPage<homeProps> = ({ links }) => {
   return (
     <>
       <Head>
-        <title>👋 Vitto Retrivi</title>
+        <title>👋 Vittorio Retrivi</title>
         <meta
           name="description"
           content="Full Stack JavaScript Developer - Currently working with React/Next and Vue/Nuxt"
