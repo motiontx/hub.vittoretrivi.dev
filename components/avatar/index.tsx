@@ -17,6 +17,7 @@ const Avatar = ({ className, src, alt, ...props }: AvatarProps) => {
         className={styles.image}
         {...props}
         alt={alt}
+        priority={true}
       />
     </div>
   );
