@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 
 interface AvatarProps {
   className?: string;
-  src: StaticImageData;
+  src: any;
   alt: string;
 }
 
