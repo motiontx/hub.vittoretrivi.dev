@@ -16,6 +16,7 @@ const animate = (canvas: HTMLCanvasElement, background: HTMLDivElement) => {
       this.x = x || 0;
       this.y = y || 0;
     }
+
     add(v: Vector) {
       this.x += v.x;
       this.y += v.y;
@@ -114,7 +115,11 @@ const animate = (canvas: HTMLCanvasElement, background: HTMLDivElement) => {
   };
 
   return () => {
-    window.addEventListener("resize", () => reset());
+    window.addEventListener("resize", () => {
+      if (width !== background.clientWidth) {
+        reset();
+      }
+    });
     reset();
     loop();
   };

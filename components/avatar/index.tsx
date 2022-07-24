@@ -1,4 +1,4 @@
-import NextImage from "next/image";
+import Image from "next/image";
 import styles from "./styles.module.css";
 
 interface AvatarProps {
@@ -10,7 +10,14 @@ interface AvatarProps {
 const Avatar = ({ className, src, alt, ...props }: AvatarProps) => {
   return (
     <div className={`${styles.avatar} ${className}`}>
-      <NextImage src={src} className={styles.image} {...props} alt={alt} />
+      <Image
+        width={150}
+        height={150}
+        src={src}
+        className={styles.image}
+        {...props}
+        alt={alt}
+      />
     </div>
   );
 };

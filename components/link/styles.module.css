@@ -1,8 +1,8 @@
 .link {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
   border-radius: 0.75rem;
   padding: 1rem;
   transition: background 0.2s ease-in-out, border 0.2s ease-in-out;
