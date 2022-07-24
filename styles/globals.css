@@ -1,4 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;800&display=swap");
+@font-face {
+  font-family: "Fira Sans";
+  src: url("/fonts/firasans-regular.woff2") format("woff2"),
+    url("/fonts/firasans-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url("/fonts/firasans-extrabold.woff2") format("woff2"),
+    url("/fonts/firasans-extrabold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
 
 html,
 body {

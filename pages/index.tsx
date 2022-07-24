@@ -15,6 +15,30 @@ interface homeProps {
   links: link[];
 }
 
+const itemsToBePreloaded = [
+  {
+    key: "firasans-regular",
+    src: "/fonts/firasans-regular.woff2",
+    type: "font/woff2",
+  },
+  {
+    key: "firasans-extrabold",
+    src: "/fonts/firasans-extrabold.woff2",
+    type: "font/woff2",
+  },
+];
+
+const preloadedItems = itemsToBePreloaded.map((item) => (
+  <link
+    as="font"
+    crossOrigin="anonymous"
+    href={item.src}
+    key={item.key}
+    type={item.type}
+    rel="preload"
+  ></link>
+));
+
 const Home: NextPage<homeProps> = ({ links }) => {
   return (
     <>
@@ -25,6 +49,7 @@ const Home: NextPage<homeProps> = ({ links }) => {
           content="Full Stack JavaScript Developer - Currently working with React/Next and Vue/Nuxt"
         />
         <link rel="icon" href="/favicon.png" />
+        {preloadedItems}
       </Head>
 
       <main className={styles.main}>
