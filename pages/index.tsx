@@ -46,8 +46,10 @@ const Home: NextPage<homeProps> = ({ links }) => {
         <title>👋 Vittorio Retrivi</title>
         <meta
           name="description"
-          content="Full Stack JavaScript Developer - Currently working with React/Next and Vue/Nuxt"
+          content="Full Stack JavaScript Developer - Currently working with React/Next and Vue/Nuxt."
         />
+        <meta name="author" content="Vittorio Retrivi" />
+        <meta name="theme-color" content="#004e92" />
         <link rel="icon" href="/favicon.png" />
         {preloadedItems}
       </Head>
