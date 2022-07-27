@@ -5,14 +5,45 @@
   align-items: center;
 }
 
+.linksContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  max-width: 46.666666rem;
+  overflow: hidden;
+}
+
 .linkList {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 0;
-  margin: 1rem 0;
+  padding: 0 5%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.mainLinkList {
+  transition: transform 0.2s ease-in-out;
+}
+
+.projectsLinkList {
+  top: 0;
+  width: 100%;
+  position: absolute;
+  transform: translateX(100%);
+  transition: transform 0.2s ease-in-out;
+}
+
+.projectsViewActive .mainLinkList {
+  transform: translateX(-100%);
+}
+
+.projectsViewActive .projectsLinkList {
+  transform: translateX(0%);
 }
 
 .linkList li {
@@ -21,10 +52,21 @@
   width: 100%;
 }
 
+.projectsLinkList li {
+  margin: 0.5rem 0;
+  display: flex;
+  width: 100%;
+}
+
 .link {
-  width: 90%;
-  max-width: 42rem;
+  width: 100%;
   margin: auto;
+}
+
+.githubLink {
+  margin-left: 1rem;
+  aspect-ratio: 1;
+  height: 3.5625rem;
 }
 
 .avatar {

@@ -1,6 +1,4 @@
 .link {
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
   border-radius: 0.75rem;
@@ -9,6 +7,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 1rem;
+  cursor: pointer;
+  line-height: 1.438;
 }
 
 .arrow {
@@ -32,11 +33,6 @@
   transform: rotate(180deg);
 }
 
-.link:hover {
-  background: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-}
-
 .link:hover .arrow {
   opacity: 1;
 }
@@ -47,4 +43,34 @@
 
 .link:hover .arrow.arrowRight {
   margin-left: 0.5rem;
+}
+
+.linkPrimary {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.linkPrimary:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.linkSecondary {
+  background: rgba(0, 255, 255, 0.3);
+  border: 1px solid rgba(0, 255, 255, 0.6);
+}
+
+.linkSecondary:hover {
+  background: rgba(0, 255, 255, 0.5);
+  border: 1px solid rgba(0, 255, 255, 1);
+}
+
+.linkTertiary {
+  background: rgba(108, 198, 68, 0.3);
+  border: 1px solid rgba(108, 198, 68, 0.6);
+}
+
+.linkTertiary:hover {
+  background: rgba(108, 198, 68, 0.5);
+  border: 1px solid rgba(108, 198, 68, 1);
 }

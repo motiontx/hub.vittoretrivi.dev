@@ -26,23 +26,41 @@ const Arrow = ({ className }: arrowProps) => {
 
 interface linkProps {
   className?: string;
-  href: string;
+  href?: string;
+  onClick?: () => void;
+  variant?: "primary" | "secondary" | "tertiary";
   children: React.ReactNode;
 }
 
-const Link = ({ className, href, children, ...props }: linkProps) => {
+const linkVariants = {
+  primary: styles.linkPrimary,
+  secondary: styles.linkSecondary,
+  tertiary: styles.linkTertiary,
+} as const;
+
+const Link = ({
+  className,
+  href,
+  onClick,
+  variant = "primary",
+  children,
+  ...props
+}: linkProps) => {
+  const Tag = onClick ? "button" : "a";
+
   return (
-    <a
-      className={`${styles.link} ${className}`}
+    <Tag
+      className={`${styles.link} ${linkVariants[variant]} ${className}`}
       href={href}
       target="_blank"
       rel="noopener noreferrer"
       {...props}
+      onClick={onClick}
     >
       <Arrow className={styles.arrowLeft} />
       {children}
       <Arrow className={styles.arrowRight} />
-    </a>
+    </Tag>
   );
 };
 
