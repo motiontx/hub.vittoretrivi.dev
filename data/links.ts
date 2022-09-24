@@ -28,6 +28,11 @@ const links: link[] = [
 
 const projects: projectLink[] = [
   {
+    label: "A Brief Introduction to Three.js",
+    href: "https://threejs.vittoretrivi.dev",
+    repo: "https://github.com/motiontx/a-brief-Introduction-to-three.js",
+  },
+  {
     label: "Clamp Calculator",
     href: "https://clamp.vittoretrivi.dev/",
     repo: "https://github.com/motiontx/training-projects",

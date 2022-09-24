@@ -61,6 +61,14 @@
 .link {
   width: 100%;
   margin: auto;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 400px) {
+  .link {
+    font-size: 0.875rem !important;
+  }
 }
 
 .githubLink {
