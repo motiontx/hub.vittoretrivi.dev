@@ -39,7 +39,7 @@ const projects: projectLink[] = [
   },
   {
     label: "Little Experiments",
-    href: "https://motiontx.github.io/little-experiments/",
+    href: "https://littleexperiments.vittoretrivi.dev/",
     repo: "https://github.com/motiontx/little-experiments",
   },
   {
