@@ -1,6 +1,7 @@
 interface link {
   href: string;
   label: string;
+  type?: "default" | "highlighted";
 }
 
 interface projectLink extends link {
@@ -8,6 +9,11 @@ interface projectLink extends link {
 }
 
 const links: link[] = [
+  {
+    href: "https://www.vittoretrivi.dev/",
+    label: "My Personal Website",
+    type: "highlighted",
+  },
   {
     href: "https://github.com/motiontx",
     label: "GitHub",

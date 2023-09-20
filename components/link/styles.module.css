@@ -74,3 +74,13 @@
   background: rgba(108, 198, 68, 0.5);
   border: 1px solid rgba(108, 198, 68, 1);
 }
+
+.linkQuaternary {
+  background: rgba(166, 23, 206, 0.3);
+  border: 1px solid rgba(166, 23, 206, 0.6);
+}
+
+.linkQuaternary:hover {
+  background: rgba(166, 23, 206, 0.5);
+  border: 1px solid rgb(166, 23, 206, 1);
+}

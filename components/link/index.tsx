@@ -28,7 +28,7 @@ interface linkProps {
   className?: string;
   href?: string;
   onClick?: () => void;
-  variant?: "primary" | "secondary" | "tertiary";
+  variant?: "primary" | "secondary" | "tertiary" | "quaternary";
   children: React.ReactNode;
 }
 
@@ -36,6 +36,7 @@ const linkVariants = {
   primary: styles.linkPrimary,
   secondary: styles.linkSecondary,
   tertiary: styles.linkTertiary,
+  quaternary: styles.linkQuaternary,
 } as const;
 
 const Link = ({

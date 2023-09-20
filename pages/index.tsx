@@ -71,9 +71,13 @@ const Home: NextPage<homeProps> = ({ links }) => {
           }`}
         >
           <ul className={`${styles.linkList} ${styles.mainLinkList}`}>
-            {links.map(({ href, label }, i) => (
+            {links.map(({ href, label, type }, i) => (
               <li key={i}>
-                <Link href={href} className={styles.link}>
+                <Link
+                  href={href}
+                  className={styles.link}
+                  variant={type === "highlighted" ? "quaternary" : "primary"}
+                >
                   {label}
                 </Link>
               </li>
